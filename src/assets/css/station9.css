@@ -52,13 +52,22 @@ footer {
   .card__description{
     font-size: 5px;
   }
+
+  .card__title {
+    font-size: 6px;
+  }
 }
 
 @media (max-width:320px) {
   .card-container {
     flex-wrap: wrap;
   }
+
+  .card__title {
+    font-size: 6px;
+  }
+  
   .card__description {
-    visibility:hidden;
+    display: none;
   }
 }
