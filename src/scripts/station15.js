@@ -1,4 +1,4 @@
-const { date } = require("fp-ts");
+
 
 async function getData() {
   // Promiseを使った実装をやってみましょう！APIとの通信でよく使う表現になります！
@@ -15,9 +15,9 @@ async function getData() {
 function test(userList) {
   return new Promise(resolve => {
     setTimeout(() => {
-      userList.map((g) => {
-        g.full_name = g.family_name + " " + g.first_name;
-        return g;
+      userList.map((data) => {
+        data.full_name = data.family_name + " " + data.first_name;
+        return data;
       });
       resolve(userList);
     },3000);
