@@ -10,7 +10,13 @@ async function getData() {
   return await result
 }
 
-function test() {
-  return
+function test(userList) {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      const result = data.family_name+" "+ data.first_name
+      userList["result"] =result ;
+      resolve();
+    },3000);
+  });
 }
 
